@@ -11,10 +11,10 @@ def perimeter(a):
 # Тесты для функций area и perimeter
 class TestSquareFunctions(unittest.TestCase):
     def test_area(self):
-        self.assertAlmostEqual(area(5), 25.0)
-        self.assertAlmostEqual(area(3), 9.0)
-        self.assertAlmostEqual(area(0), 0.0)
-        self.assertAlmostEqual(area(7.5), 56.25)
+        self.assertEqual(area(5), 25.0)
+        self.assertEqual(area(3), 9.0)
+        self.assertEqual(area(0), 0.0)
+        self.assertEqual(area(7.5), 56.25)
 
     def test_perimeter(self):
         self.assertEqual(perimeter(5), 20)

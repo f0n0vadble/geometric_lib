@@ -11,10 +11,10 @@ def perimeter(a, b, c):
 # Тесты для функций area и perimeter
 class TestTriangleFunctions(unittest.TestCase):
     def test_area(self):
-        self.assertAlmostEqual(area(10, 5), 25.0)
-        self.assertAlmostEqual(area(3, 4), 6.0)
-        self.assertAlmostEqual(area(0, 5), 0.0)
-        self.assertAlmostEqual(area(7.5, 2.5), 9.375)
+        self.assertEqual(area(10, 5), 25.0)
+        self.assertEqual(area(3, 4), 6.0)
+        self.assertEqual(area(0, 5), 0.0)
+        self.assertEqual(area(7.5, 2.5), 9.375)
 
     def test_perimeter(self):
         self.assertEqual(perimeter(3, 4, 5), 12)
